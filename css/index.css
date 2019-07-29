@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Condensed Open Sans', sans-serif;
+}
+body {
+  background-color: #2d4059;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  margin: 0 1.2rem;
+}
+header .logo h1 {
+  font-size: 2rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}
+.nav-links a {
+  margin: 0 1.2rem;
+  width: 10rem;
+  height: 1.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-links a button {
+  font-size: 100%;
+  font-family: inherit;
+  border: none;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 2.3rem;
+  width: 7rem;
+  margin: 0 1.1rem;
+  font-weight: bold;
+}
+.nav-links a .login {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  width: 5.5rem;
+}
+.nav-links a .register {
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #febf10, #f696bf);
+}
+footer {
+  font-weight: lighter;
+  color: white;
+  text-align: left;
+}
+footer .footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10%;
+}
+footer .footer-main div.footer-blip {
+  width: 25%;
+  margin-right: 20%;
+}
+footer .footer-main div.footer-blip h4 {
+  font-size: 2rem;
+}
+footer .footer-main div.footer-blip p {
+  font-size: 1rem;
+  line-height: 2;
+}
+footer .footer-main div {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+footer .footer-main div ul {
+  padding: 0;
+}
+footer .copyright {
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner {
+  width: 100%;
+}
+.banner h1 {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 1px 2px 3px black;
+  line-height: 1;
+  letter-spacing: 0.3rem;
+}
+.banner img {
+  width: 100%;
+}
+.banner .center-left {
+  position: absolute;
+  top: 60%;
+  left: 38%;
+  transform: translate(-50%, -150%);
+}
+.banner .center-left button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1.1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #febf10, #f696bf);
+  font-weight: bold;
+}
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main h2 {
+  font-size: 2rem;
+}
+.main p {
+  font-weight: 300;
+  font-family: 'Open sans condensed', sans-serif;
+}
+.main #services {
+  color: #fedc7c;
+}
+.main #services .service-intro h1 {
+  margin: 10% 0 2.5% 0;
+}
+.main #services .service-intro p {
+  margin: 0 15%;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.main #services .service-divs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+.main #services .service-divs div {
+  width: 30%;
+}
+.main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.main .about .img-about {
+  height: 300px;
+  width: 100%;
+  background-color: #f0438d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .about .txt-about {
+  background-color: #fac0d9;
+  padding-bottom: 5%;
+}
+.main .about h2 {
+  margin-top: 7%;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+.main .about p {
+  margin: auto 15%;
+}
+.main .about button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1.1rem;
+  border: none;
+  background: white;
+  font-weight: bold;
+}
