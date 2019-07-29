@@ -54,6 +54,7 @@
         font-weight: 300;
         font-family: 'Open sans condensed', sans-serif;
     }
+    // Services section style 
     #services {
         color: @servicestxt;
 
@@ -78,6 +79,54 @@
         }
         
     }
-;
+    // About section style
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        
+        .img-about {
+            height: 300px;
+            width: 100%;
+            background-color: #f0438d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .txt-about {
+            background-color: #fac0d9;
+            padding-bottom: 5%;
+        }
+
+        h2 {
+            margin-top: 7%;
+            font-weight: lighter;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: auto 15%;
+        }
+
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0 1.1rem;
+            height: 3rem;
+            width: 15rem;
+            margin: 0 1.1rem;
+            border: none;
+            background: white;
+            font-weight: bold;
+
+        }
+    }
+    
+    
 
 }
