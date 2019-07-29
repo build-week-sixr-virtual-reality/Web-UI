@@ -28,7 +28,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 h4 {
@@ -126,4 +126,35 @@ header .logo h1 {
   color: white;
   background: linear-gradient(to right, #febf10, #f696bf);
   font-weight: bold;
+}
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main h2 {
+  font-size: 2rem;
+}
+.main p {
+  font-weight: 300;
+  font-family: 'Open sans condensed', sans-serif;
+}
+.main #services {
+  color: #fedc7c;
+}
+.main #services .service-intro h1 {
+  margin: 10% 0 2.5% 0;
+}
+.main #services .service-intro p {
+  margin: 0 15%;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.main #services .service-divs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+.main #services .service-divs div {
+  width: 30%;
 }
