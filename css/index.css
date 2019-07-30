@@ -10,11 +10,13 @@ body {
 }
 body {
   background-color: #2d4059;
+  margin: 0;
 }
 .container {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 h1,
@@ -133,6 +135,9 @@ footer .copyright {
 }
 .banner {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
 }
 .banner h1 {
   color: white;
@@ -144,11 +149,50 @@ footer .copyright {
 .banner img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .banner img {
+    display: none;
+  }
+}
+.banner .center-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.banner .center-mobile button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1.1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #febf10, #f696bf);
+  font-weight: bold;
+}
+@media (min-width: 501px) {
+  .banner .center-mobile {
+    display: none;
+  }
+}
 .banner .center-left {
+  max-width: 100%;
   position: absolute;
-  top: 60%;
-  left: 38%;
-  transform: translate(-50%, -150%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .banner .center-left {
+    display: none;
+  }
 }
 .banner .center-left button {
   font-size: 100%;

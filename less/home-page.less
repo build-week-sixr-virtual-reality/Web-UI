@@ -2,24 +2,72 @@
 
 .banner {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
 
     h1 {
         color: white;
         font-size: 6rem;
         text-shadow: 1px 2px 3px black; 
         line-height: 1;
-        letter-spacing: .3rem; 
+        letter-spacing: .3rem;
+
     }
+
     img {
         width: 100%;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    .center-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0 1.1rem;
+            height: 3rem;
+            width: 15rem;
+            margin: 0 1.1rem;
+            border: none;
+            color: white;
+            background: @btngradient;
+            font-weight: bold;  
+
+        }
+
+        @media (min-width: 501px){
+            display: none;
+        }
     }
 
     .center-left {
+        max-width: 100%;
         position: absolute;
-        top: 60%;
-        left: 38%;
-        transform: translate(-50%, -150%);
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%, -140%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
+        @media @mobile {
+    
+                display: none;
+        }
+
+ 
+
+        
         button {
             font-size: 100%;
             font-family: inherit;
