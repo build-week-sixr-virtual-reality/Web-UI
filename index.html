@@ -18,10 +18,16 @@
     <body>
     <div class="container">
         <header>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+            </span>
             <div class="logo">
-                <a href="#home"><h1>Logo</h1></a>
+                <a href="#home">
+                    <i class="fab fa-pied-piper fa-3x"></i>
+                    <h1>SIXR</h1>
+                </a>
             </div>
-            <div class="nav-links">
+            <div id="nav-links" class="nav-links">
                     <a href="#home" class="home">HOME</a>
                     <a href="#work">WORK</a>
                     <a href="#services">SERVICES</a>
@@ -33,14 +39,22 @@
             </div><!-- nav-links -->
         </header>
 
-        <section class="banner">
-            <img src="img/vr-painting.jpg" alt="vr painting">
+        <section id="home" class="banner">
+            
+            <div class="center-mobile">
+                <h1>
+                    Explore<br>Alternative<br>Realities<br>
+                </h1>
+                <button>READ ARTICLE &emsp;&emsp;></button>
+            </div>
             <div class="center-left">
                 <h1>
                     Explore<br>Alternative<br>Realities<br>
                 </h1>
                 <button>READ ARTICLE &emsp;&emsp;></button>
             </div>
+            <img src="img/vr-painting.jpg" alt="vr painting">
+
         </section>
 
 
@@ -69,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about">
+            <div id="about" class="about">
                 <!-- <img src="img/desk-notes.jpg" alt=""> -->
                 <div class="img-about">
                     <h1>Lorem Ipsum Dolor<br>
@@ -87,7 +101,7 @@
         </section>
 
         <footer>
-            <section class="footer-main">
+            <section id="contact" class="footer-main">
                 <div class="footer-blip">
                     <h4>GRADA</h4>
                     <p>Maybe he has a little friend that lives right over here. God gave you this gift of imagination. Use it. There we go.</p>
@@ -141,6 +155,6 @@
         </footer>
     </div>
         
-        <script src="" async defer></script>
+        <script src="index.js" async defer></script>
     </body>
 </html>g

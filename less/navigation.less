@@ -2,21 +2,52 @@ header {
     display: flex;
     justify-content: space-between;
 
-    .logo {
+    .navbar-toggle {
+        @media (min-width: 501px){
+            display: none;
+        }
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer; 
+        color: rgba(255,255,255,0.8);
+        font-size: 24px;
+    }
+
+    .active{
         display: flex;
-        margin: 0 1.2rem;
+    }
+
+    .logo a {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 30%;
+        color: @iconcolor;
+        align-items: center;
+        justify-content: space-between;
+
 
         h1 {
             font-size: 2rem;               
+            padding: 0 1.1rem;
+            color: #f0438d;
             }
-        }
+        
     }
+        
+}
     .nav-links {
         display: flex;
         justify-content: space-around; 
         align-items: center;
         width: 70%;
         text-align: center;        
+
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            display: none;
+        }
 
         a {
             margin: 0 1.2rem;
@@ -25,6 +56,10 @@ header {
             margin: 0;
             display: flex;
             align-items: center;
+
+        // a.active {
+        //     border: 1px solid white;
+        // }
             
             button {
                 font-size: 100%;
@@ -36,6 +71,9 @@ header {
                 width: 7rem;
                 margin: 0 1.1rem;
                 font-weight: bold;
+                @media @mobile {
+                    display: none;
+                }
 
             }
             

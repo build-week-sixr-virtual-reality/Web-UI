@@ -2,24 +2,80 @@
 
 .banner {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
 
     h1 {
         color: white;
         font-size: 6rem;
         text-shadow: 1px 2px 3px black; 
         line-height: 1;
-        letter-spacing: .3rem; 
+        letter-spacing: .3rem;
+
     }
+
     img {
         width: 100%;
+            color: red;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+            from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+
+    .center-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: pink;
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0 1.1rem;
+            height: 3rem;
+            width: 15rem;
+            margin: 0 1.1rem 1.1rem;
+            border: none;
+            color: white;
+            background: @btngradient;
+            font-weight: bold;
+
+        }
+
+        @media (min-width: 801px){
+            display: none;
+        }
     }
 
     .center-left {
+        max-width: 100%;
         position: absolute;
-        top: 60%;
-        left: 38%;
-        transform: translate(-50%, -150%);
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%, -80%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
+        @media @tablet {
+    
+                display: none;
+        }
+
+ 
+
+        
         button {
             font-size: 100%;
             font-family: inherit;
@@ -60,7 +116,7 @@
 
         .service-intro {
             h1 {
-                margin: 10% 0 2.5% 0 ;
+                margin: 0 0 2.5% 0 ;
             }
             p {
                 margin: 0 15%;
@@ -75,6 +131,10 @@
             margin-top: 2.5%;
             div {
                 width: 30%;
+
+                .fas {
+                    color: #f0438d;
+                }
             }
         }
         
@@ -89,7 +149,7 @@
         .img-about {
             height: 300px;
             width: 100%;
-            background-color: #f0438d;
+            background-color: #fac0d9;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -97,7 +157,7 @@
         }
 
         .txt-about {
-            background-color: #fac0d9;
+            background-color: #f0438d;
             padding-bottom: 5%;
         }
 

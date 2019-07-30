@@ -10,11 +10,13 @@ body {
 }
 body {
   background-color: #2d4059;
+  margin: 0;
 }
 .container {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 h1,
@@ -51,12 +53,34 @@ header {
   display: flex;
   justify-content: space-between;
 }
-header .logo {
-  display: flex;
-  margin: 0 1.2rem;
+header .navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
 }
-header .logo h1 {
+@media (min-width: 501px) {
+  header .navbar-toggle {
+    display: none;
+  }
+}
+header .active {
+  display: flex;
+}
+header .logo a {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 30%;
+  color: #fac0d9;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo a h1 {
   font-size: 2rem;
+  padding: 0 1.1rem;
+  color: #f0438d;
 }
 .nav-links {
   display: flex;
@@ -64,6 +88,13 @@ header .logo h1 {
   align-items: center;
   width: 70%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+  }
 }
 .nav-links a {
   margin: 0 1.2rem;
@@ -84,6 +115,11 @@ header .logo h1 {
   margin: 0 1.1rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .nav-links a button {
+    display: none;
+  }
+}
 .nav-links a .login {
   border: 1px solid white;
   background: none;
@@ -93,7 +129,7 @@ header .logo h1 {
 .nav-links a .register {
   border: none;
   color: white;
-  background: linear-gradient(to right, #febf10, #f696bf);
+  background: linear-gradient(to right, #febf10, #f0438d);
 }
 footer {
   font-weight: lighter;
@@ -133,6 +169,9 @@ footer .copyright {
 }
 .banner {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
 }
 .banner h1 {
   color: white;
@@ -143,12 +182,56 @@ footer .copyright {
 }
 .banner img {
   width: 100%;
+  color: red;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+}
+@media (max-width: 500px) {
+  .banner img {
+    display: none;
+  }
+}
+.banner .center-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+.banner .center-mobile button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1.1rem 1.1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #febf10, #f0438d);
+  font-weight: bold;
+}
+@media (min-width: 801px) {
+  .banner .center-mobile {
+    display: none;
+  }
 }
 .banner .center-left {
+  max-width: 100%;
   position: absolute;
-  top: 60%;
-  left: 38%;
-  transform: translate(-50%, -150%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .banner .center-left {
+    display: none;
+  }
 }
 .banner .center-left button {
   font-size: 100%;
@@ -160,7 +243,7 @@ footer .copyright {
   margin: 0 1.1rem;
   border: none;
   color: white;
-  background: linear-gradient(to right, #febf10, #f696bf);
+  background: linear-gradient(to right, #febf10, #f0438d);
   font-weight: bold;
 }
 .main {
@@ -179,7 +262,7 @@ footer .copyright {
   color: #fedc7c;
 }
 .main #services .service-intro h1 {
-  margin: 10% 0 2.5% 0;
+  margin: 0 0 2.5% 0;
 }
 .main #services .service-intro p {
   margin: 0 15%;
@@ -194,6 +277,9 @@ footer .copyright {
 .main #services .service-divs div {
   width: 30%;
 }
+.main #services .service-divs div .fas {
+  color: #f0438d;
+}
 .main .about {
   display: flex;
   flex-direction: column;
@@ -203,13 +289,13 @@ footer .copyright {
 .main .about .img-about {
   height: 300px;
   width: 100%;
-  background-color: #f0438d;
+  background-color: #fac0d9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main .about .txt-about {
-  background-color: #fac0d9;
+  background-color: #f0438d;
   padding-bottom: 5%;
 }
 .main .about h2 {
