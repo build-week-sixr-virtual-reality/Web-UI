@@ -69,12 +69,18 @@ header .navbar-toggle {
 header .active {
   display: flex;
 }
-header .logo {
+header .logo a {
   display: flex;
-  margin: 0 1.2rem;
+  flex-flow: row nowrap;
+  width: 30%;
+  color: #fac0d9;
+  align-items: center;
+  justify-content: space-between;
 }
-header .logo h1 {
+header .logo a h1 {
   font-size: 2rem;
+  padding: 0 1.1rem;
+  color: #f0438d;
 }
 .nav-links {
   display: flex;
@@ -123,7 +129,7 @@ header .logo h1 {
 .nav-links a .register {
   border: none;
   color: white;
-  background: linear-gradient(to right, #febf10, #f696bf);
+  background: linear-gradient(to right, #febf10, #f0438d);
 }
 footer {
   font-weight: lighter;
@@ -176,6 +182,8 @@ footer .copyright {
 }
 .banner img {
   width: 100%;
+  color: red;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
 }
 @media (max-width: 500px) {
   .banner img {
@@ -200,7 +208,7 @@ footer .copyright {
   margin: 0 1.1rem 1.1rem;
   border: none;
   color: white;
-  background: linear-gradient(to right, #febf10, #f696bf);
+  background: linear-gradient(to right, #febf10, #f0438d);
   font-weight: bold;
 }
 @media (min-width: 801px) {
@@ -217,6 +225,8 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 800px) {
   .banner .center-left {
@@ -233,7 +243,7 @@ footer .copyright {
   margin: 0 1.1rem;
   border: none;
   color: white;
-  background: linear-gradient(to right, #febf10, #f696bf);
+  background: linear-gradient(to right, #febf10, #f0438d);
   font-weight: bold;
 }
 .main {
@@ -252,7 +262,7 @@ footer .copyright {
   color: #fedc7c;
 }
 .main #services .service-intro h1 {
-  margin: 10% 0 2.5% 0;
+  margin: 0 0 2.5% 0;
 }
 .main #services .service-intro p {
   margin: 0 15%;
@@ -267,6 +277,9 @@ footer .copyright {
 .main #services .service-divs div {
   width: 30%;
 }
+.main #services .service-divs div .fas {
+  color: #f0438d;
+}
 .main .about {
   display: flex;
   flex-direction: column;
@@ -276,13 +289,13 @@ footer .copyright {
 .main .about .img-about {
   height: 300px;
   width: 100%;
-  background-color: #f0438d;
+  background-color: #fac0d9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main .about .txt-about {
-  background-color: #fac0d9;
+  background-color: #f0438d;
   padding-bottom: 5%;
 }
 .main .about h2 {

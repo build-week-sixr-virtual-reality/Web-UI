@@ -18,15 +18,24 @@ header {
         display: flex;
     }
 
-    .logo {
+    .logo a {
         display: flex;
-        margin: 0 1.2rem;
+        flex-flow: row nowrap;
+        width: 30%;
+        color: @iconcolor;
+        align-items: center;
+        justify-content: space-between;
+
 
         h1 {
             font-size: 2rem;               
+            padding: 0 1.1rem;
+            color: #f0438d;
             }
-        }
+        
     }
+        
+}
     .nav-links {
         display: flex;
         justify-content: space-around; 

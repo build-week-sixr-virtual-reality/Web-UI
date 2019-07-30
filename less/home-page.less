@@ -17,11 +17,16 @@
 
     img {
         width: 100%;
+            color: red;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+            from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        
 
         @media @mobile {
             display: none;
         }
     }
+
 
     .center-mobile {
         display: flex;
@@ -60,6 +65,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
 
         @media @tablet {
     
@@ -109,7 +116,7 @@
 
         .service-intro {
             h1 {
-                margin: 10% 0 2.5% 0 ;
+                margin: 0 0 2.5% 0 ;
             }
             p {
                 margin: 0 15%;
@@ -124,6 +131,10 @@
             margin-top: 2.5%;
             div {
                 width: 30%;
+
+                .fas {
+                    color: #f0438d;
+                }
             }
         }
         
@@ -138,7 +149,7 @@
         .img-about {
             height: 300px;
             width: 100%;
-            background-color: #f0438d;
+            background-color: #fac0d9;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,7 +157,7 @@
         }
 
         .txt-about {
-            background-color: #fac0d9;
+            background-color: #f0438d;
             padding-bottom: 5%;
         }
 
