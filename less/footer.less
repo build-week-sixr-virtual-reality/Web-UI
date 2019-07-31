@@ -10,9 +10,13 @@ footer {
         justify-content: space-between;
         margin: 10%;
 
-        div.footer-blip {
+        div.logo {
             width: 25%;
             margin-right: 20%;
+
+            img {
+                width: 35%;
+            }
             h4 {
                 font-size: 2rem;
             }
@@ -20,27 +24,51 @@ footer {
             p {
                 font-size: 1rem;
                 line-height: 2;
-            }
-            
-            
+            }            
         }
-
+        // Resource div styling
         div{
             width: 10%;
             display: flex;
             flex-direction: column;          
             line-height: 3;
-            
+            align-items: center;
+            padding: 0;            
 
             ul {
                 padding: 0;
             }
 
+            .social-text{
+                @media (max-width: 800px) {
+                    display: none;
+                }
+                
+            }
+
+            .social-icons {
+                @media (min-width: 801px){
+                    display: none;
+                }
+            }
+
         }
+
+        .footer-resources-2 {
+            @media @tablet {
+                display: none;
+            }
     }
+
+
+    }
+
     .copyright {
         margin-left: 10%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center ;
+        @media @mobile {
+            display: none;
+        }
     }
 }

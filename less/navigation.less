@@ -1,9 +1,10 @@
 header {
     display: flex;
     justify-content: space-between;
-
+    margin: 1.1rem;
+// Toggles JavaScript hamburger menu
     .navbar-toggle {
-        @media (min-width: 501px){
+        @media (min-width: 801px){
             display: none;
         }
         position: absolute;
@@ -18,76 +19,74 @@ header {
         display: flex;
     }
 
-    .logo a {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 30%;
-        color: @iconcolor;
-        align-items: center;
-        justify-content: space-between;
-
-
-        h1 {
-            font-size: 2rem;               
-            padding: 0 1.1rem;
-            color: #f0438d;
-            }
-        
+    .logo {
+        img {
+            width: 30%;
+        }
     }
         
 }
-    .nav-links {
-        display: flex;
-        justify-content: space-around; 
-        align-items: center;
-        width: 70%;
-        text-align: center;        
+// Main nav links
+.nav-links {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 75%;
+    text-align: center;        
+    // Tablet link style
+    @media @tablet {
+        flex-direction: column;
+        display: none;
+        width: 50%;
+        font-size: 1.3rem;
+    }
 
-        @media @mobile {
-            flex-direction: column;
-            justify-content: center;
-            display: none;
+    a {
+        margin: 0 1.2rem;
+        width: 10rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        z-index: 7;
+        font-family: 'Open sans', sans-serif;
+
+        &:hover {
+            color: rgb(0, 255, 255);
         }
 
-        a {
-            margin: 0 1.2rem;
-            width: 10rem;
-            height: 1.5rem;
-            margin: 0;
-            display: flex;
-            align-items: center;
+        @media @tablet {
+            padding: 1rem;
+        }
 
-        // a.active {
-        //     border: 1px solid white;
-        // }
-            
-            button {
-                font-size: 100%;
-                font-family: inherit;
-                border: none;
-                border-radius: 15px;
-                padding: 0 1.1rem;
-                height: 2.3rem;
-                width: 7rem;
-                margin: 0 1.1rem;
-                font-weight: bold;
-                @media @mobile {
-                    display: none;
-                }
-
-            }
-            
-            .login {
-                border: 1px solid white;
-                background: none;
-                color: white;
-                width: 5.5rem;
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0 1.1rem;
+            height: 2.3rem;
+            width: 7rem;
+            margin: 0 1.1rem;
+            font-weight: bold;
+            @media @tablet {
+                display: none;
             }
 
-            .register {
-                border: none;
-                color: white;
-                background: @btngradient;
-            }
+        }
+        // Login and register button style
+        .login {
+            border: 1px solid white;
+            background: none;
+            color: white;
+            width: 5.5rem;
+        }
+
+        .register {
+            border: none;
+            color: white;
+            background: @btngradient;
         }
     }
+
+
+}
