@@ -69,18 +69,8 @@ header .navbar-toggle {
 header .active {
   display: flex;
 }
-header .logo a {
-  display: flex;
-  flex-flow: row nowrap;
+header .logo img {
   width: 30%;
-  color: #fac0d9;
-  align-items: center;
-  justify-content: space-between;
-}
-header .logo a h1 {
-  font-size: 2rem;
-  padding: 0 1.1rem;
-  color: #f0438d;
 }
 .nav-links {
   display: flex;
@@ -179,11 +169,11 @@ footer .copyright {
   text-shadow: 1px 2px 3px black;
   line-height: 1;
   letter-spacing: 0.3rem;
+  z-index: 7;
 }
 .banner img {
   width: 100%;
-  color: red;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
 }
 @media (max-width: 500px) {
   .banner img {
@@ -227,6 +217,7 @@ footer .copyright {
   text-align: center;
   justify-content: center;
   align-items: center;
+  z-index: 7;
 }
 @media (max-width: 800px) {
   .banner .center-left {
