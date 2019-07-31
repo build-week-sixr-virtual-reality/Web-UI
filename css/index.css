@@ -390,6 +390,7 @@ h1 {
 .team-container .team {
   display: grid;
   justify-items: center;
+  background: purple;
 }
 .team-container .team img {
   max-width: 240px;
@@ -410,11 +411,17 @@ h1 {
   color: #a5d99a;
   font-family: 'Open sans condensed', sans-serif;
   margin-top: 1.1rem;
+  margin-bottom: 0;
 }
 @media (max-width: 500px) {
   .team-container h2 {
     margin-bottom: 0;
   }
+}
+.team-container p {
+  color: white;
+  font-size: 1rem;
+  padding: 0 5%;
 }
 .team-container button {
   font-size: 100%;
