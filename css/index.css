@@ -345,3 +345,26 @@ footer .copyright {
   background: white;
   font-weight: bold;
 }
+.team-container {
+  display: grid;
+  justify-items: center;
+  padding-top: 5%;
+  grid-gap: 50px;
+  grid-template: [row1-start] "member-1 member-2 member-3" 1fr [row1-end] [row2-start] "member-4 member-5 member-6" 1fr [row2-end] [row3-start] "member-7 member-8 member-9" 1fr [row3-end] / 1fr 1fr 1fr;
+}
+.team-container div {
+  width: 250px;
+  height: 250px;
+}
+.team-container button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1.1rem;
+  border: none;
+  background: white;
+  font-weight: bol;
+}
