@@ -52,6 +52,7 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
+  margin: 1.1rem;
 }
 header .navbar-toggle {
   position: absolute;
@@ -61,7 +62,7 @@ header .navbar-toggle {
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
 }
-@media (min-width: 501px) {
+@media (min-width: 801px) {
   header .navbar-toggle {
     display: none;
   }
@@ -76,13 +77,12 @@ header .logo img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 75%;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .nav-links {
     flex-direction: column;
-    justify-content: center;
     display: none;
   }
 }
@@ -132,14 +132,17 @@ footer .footer-main {
   justify-content: space-between;
   margin: 10%;
 }
-footer .footer-main div.footer-blip {
+footer .footer-main div.logo {
   width: 25%;
   margin-right: 20%;
 }
-footer .footer-main div.footer-blip h4 {
+footer .footer-main div.logo img {
+  width: 35%;
+}
+footer .footer-main div.logo h4 {
   font-size: 2rem;
 }
-footer .footer-main div.footer-blip p {
+footer .footer-main div.logo p {
   font-size: 1rem;
   line-height: 2;
 }
@@ -152,16 +155,40 @@ footer .footer-main div {
 footer .footer-main div ul {
   padding: 0;
 }
+@media (max-width: 500px) {
+  footer .footer-main .footer-resources-2 {
+    display: none;
+  }
+}
 footer .copyright {
   margin-left: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center ;
 }
 .banner {
   width: 100%;
   justify-content: center;
   align-items: center;
   padding-bottom: 10%;
+}
+@media (min-width: 801px) {
+  .banner .mobile-btns {
+    display: none;
+    width: 100%;
+  }
+}
+.banner .mobile-btns button {
+  width: 95%;
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  margin: 0 1.1rem 1.1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #febf10, #f0438d);
+  font-weight: bold;
 }
 .banner h1 {
   color: white;

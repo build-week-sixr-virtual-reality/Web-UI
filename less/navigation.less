@@ -1,9 +1,10 @@
 header {
     display: flex;
     justify-content: space-between;
+    margin: 1.1rem;
 
     .navbar-toggle {
-        @media (min-width: 501px){
+        @media (min-width: 801px){
             display: none;
         }
         position: absolute;
@@ -46,12 +47,11 @@ header {
         display: flex;
         justify-content: space-around; 
         align-items: center;
-        width: 70%;
+        width: 75%;
         text-align: center;        
 
-        @media @mobile {
+        @media @tablet {
             flex-direction: column;
-            justify-content: center;
             display: none;
         }
 
@@ -96,4 +96,6 @@ header {
                 background: @btngradient;
             }
         }
+
+
     }
