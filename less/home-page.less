@@ -1,6 +1,7 @@
 // Banner style
 
 .banner {
+    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -217,7 +218,7 @@
 
 .team-container {
     display: grid;
-    justify-items: center;
+
     padding-top: 5%;
     grid-gap: 50px;
     grid-template: 
@@ -226,9 +227,14 @@
     [row3-start] "member-7 member-8 member-9" 1fr [row3-end]
     / 1fr 1fr 1fr;
 
-    div {
-        width: 250px;
-        height: 250px;
+    .team {
+        display: grid;
+        justify-items: center;
+    }
+
+    h2 {
+        color: #a5d99a;
+        font-family: 'Open sans condensed', sans-serif;
     }
 
     button {
@@ -236,12 +242,10 @@
         font-family: inherit;
         border: none;
         border-radius: 15px;
-        padding: 0 1.1rem;
         height: 3rem;
         width: 15rem;
-        margin: 0 1.1rem;
         border: none;
         background: white;
-        font-weight: bol
+        font-weight: bold;
     }
 }
