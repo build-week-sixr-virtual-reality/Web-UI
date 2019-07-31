@@ -34,18 +34,38 @@ footer {
             display: flex;
             flex-direction: column;          
             line-height: 3;
+            align-items: center;
+            padding: 0;
+
             
 
             ul {
                 padding: 0;
             }
 
+            .social-text{
+                @media (max-width: 800px) {
+                    display: none;
+                }
+                
+            }
+
+            .social-icons {
+                @media (min-width: 801px){
+                    display: none;
+                }
+            }
+
         }
 
         .footer-resources-2 {
-            @media @mobile {
+            @media @tablet {
                 display: none;
             }
+
+
+        
+
     }
 
 
@@ -55,5 +75,8 @@ footer {
         margin-left: 10%;
         display: flex;
         justify-content: center ;
+        @media @mobile {
+            display: none;
+        }
     }
 }
