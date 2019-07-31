@@ -334,12 +334,17 @@ footer .copyright {
   color: white;
 }
 .main .about .img-about {
-  height: 300px;
   width: 100%;
-  background-color: #fac0d9;
+  background: linear-gradient(to right, #febf10, #f0438d);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.1rem 0;
+}
+.main .about .img-about h1 {
+  margin: 0;
+  color: white;
 }
 .main .about .txt-about {
   background-color: #f0438d;
