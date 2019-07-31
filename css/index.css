@@ -367,6 +367,11 @@ h1 {
   max-width: 250px;
   max-height: 250px;
 }
+@media (max-width: 800px) {
+  .team-container .team img {
+    max-width: 100px;
+  }
+}
 .team-container h2 {
   color: #a5d99a;
   font-family: 'Open sans condensed', sans-serif;
@@ -381,4 +386,9 @@ h1 {
   border: none;
   background: white;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .team-container button {
+    width: 6rem;
+  }
 }
