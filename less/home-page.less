@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 10%;
-
+// Hide menu buttons at tablet and phone
     .mobile-btns {
         @media (min-width: 801px) {
             display: none;
@@ -37,19 +37,19 @@
         z-index: 7;
 
     }
-
+// Banner image styling
     img {
         width: 100%;
         -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, 
         from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-        
-
+     
+// Hide banner photo at phone
         @media @mobile {
             display: none;
         }
     }
 
-
+// Mobile banner div
     .center-mobile {
         display: flex;
         flex-direction: column;
@@ -72,12 +72,12 @@
             font-weight: bold;
 
         }
-
+// Hide mobile div at larger than tablet
         @media (min-width: 801px){
             display: none;
         }
     }
-
+// Desktop banner div
     .center-left {
         max-width: 100%;
         position: absolute;
@@ -90,14 +90,14 @@
         justify-content: center;
         align-items: center;
         z-index: 7;
-
+// Hide at tablet
         @media @tablet {
     
                 display: none;
         }
 
  
-
+// Responsive login in and register buttons
         
         button {
             font-size: 100%;
