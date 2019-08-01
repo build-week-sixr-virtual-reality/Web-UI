@@ -115,6 +115,11 @@ header .logo img {
   width: 7rem;
   margin: 0 1.1rem;
   font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.nav-links a button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 800px) {
   .nav-links a button {
@@ -219,6 +224,8 @@ footer .copyright {
   color: white;
   background: linear-gradient(to right, #febf10, #f0438d);
   font-weight: bold;
+  transition: all 0.5;
+  cursor: pointer;
 }
 .banner h1 {
   color: white;
@@ -293,6 +300,10 @@ footer .copyright {
   color: white;
   background: linear-gradient(to right, #febf10, #f0438d);
   font-weight: bold;
+  cursor: pointer;
+}
+.banner .center-left button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .main {
   text-align: center;
@@ -370,6 +381,11 @@ footer .copyright {
   border: none;
   background: white;
   font-weight: bold;
+  transition: all 0.5;
+  cursor: pointer;
+}
+.main .about button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h1 {
   color: #febf10;
@@ -442,6 +458,10 @@ h1 {
   background: white;
   font-weight: bold;
   margin: 5%;
+  cursor: pointer;
+}
+.team-container button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 800px) {
   .team-container button {
