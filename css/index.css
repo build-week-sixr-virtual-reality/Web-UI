@@ -185,6 +185,7 @@ footer .footer-main div ul {
 }
 footer .copyright {
   margin-left: 10%;
+  padding-bottom: 1.1rem;
   display: flex;
   justify-content: center ;
 }
@@ -391,10 +392,17 @@ h1 {
   display: grid;
   justify-items: center;
   background: purple;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .team-container .team img {
   max-width: 240px;
   max-height: 240px;
+  transition: transform 1s 1s, background 1s 1s;
+}
+.team-container .team img:hover {
+  transform: rotate(720deg) scale(0.5);
+  background: #e67e22;
+  border-radius: 200px;
 }
 @media (max-width: 800px) {
   .team-container .team img {
@@ -432,6 +440,7 @@ h1 {
   border: none;
   background: white;
   font-weight: bold;
+  margin: 5%;
 }
 @media (max-width: 800px) {
   .team-container button {
