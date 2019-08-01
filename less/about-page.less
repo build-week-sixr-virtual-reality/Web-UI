@@ -24,9 +24,21 @@ h1 {
         display: grid;
         justify-items: center;
         background: purple;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
         img {
             max-width: 240px;
             max-height: 240px;
+            // Spin animation
+            transition: transform 1s 1s, background 1s 1s;
+    
+        &:hover {
+            transform: rotate(720deg) scale(0.5);
+            background: #e67e22;
+            border-radius: 200px;
+        }
+  
 
             @media @tablet {
                 max-width: 150px;
@@ -67,6 +79,7 @@ h1 {
         border: none;
         background: white;
         font-weight: bold;
+        margin: 5%; 
 
         @media @tablet {
             width: 6rem;
